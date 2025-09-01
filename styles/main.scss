@@ -1,0 +1,211 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+$primary: #ff7235;
+$text: #dadada;
+
+$font-size: 24px;
+$radius: 10px;
+$section-margin: 100px;
+
+body {
+  width: 80%;
+  margin: 0 auto;
+  font-size: $font-size;
+  font-family: "Roboto", sans-serif;
+
+  button {
+    font-size: $font-size;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+
+  p {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    span {
+      color: white;
+      background: $primary;
+      padding: 0.5rem;
+      border-radius: 100%;
+      width: 2rem;
+      height: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  ul {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+  }
+
+  button {
+    background: none;
+    color: $primary;
+    border: 2px solid $primary;
+    border-radius: $radius;
+    padding: 1rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: $primary;
+      color: white;
+    }
+  }
+}
+
+.hero {
+  display: flex;
+  align-items: end;
+  margin-top: $section-margin;
+
+  > * {
+    flex: 1;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    h1 {
+      font-size: 8rem;
+      font-weight: 600;
+    }
+
+    p {
+      color: $text;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1rem;
+
+      button {
+        font-size: 1.5rem;
+        padding: 1.5rem;
+        border-radius: $radius;
+        background: $primary;
+        color: white;
+        border: none;
+      }
+    }
+  }
+}

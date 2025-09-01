@@ -1,0 +1,194 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+body {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+}
+body button {
+  font-size: 24px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+nav p {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+nav p span {
+  color: white;
+  background: #ff7235;
+  padding: 0.5rem;
+  border-radius: 100%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav ul {
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+}
+nav button {
+  background: none;
+  color: #ff7235;
+  border: 2px solid #ff7235;
+  border-radius: 10px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+nav button:hover {
+  background: #ff7235;
+  color: white;
+}
+
+.hero {
+  display: flex;
+  align-items: end;
+  margin-top: 100px;
+}
+.hero > * {
+  flex: 1;
+}
+.hero .text {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.hero .text h1 {
+  font-size: 8rem;
+  font-weight: 600;
+}
+.hero .text p {
+  color: #dadada;
+}
+.hero .text div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.hero .text div button {
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  background: #ff7235;
+  color: white;
+  border: none;
+}
+
+/*# sourceMappingURL=main.css.map */
