@@ -191,4 +191,49 @@ nav button:hover {
   border: none;
 }
 
+.graphImg {
+  width: 100%;
+  margin-top: 100px;
+  border-image: linear-gradient(#ff7235 0 0) fill 0/auto/0 100vw;
+  padding-top: 5rem;
+}
+
+.brands {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+.brands img {
+  height: 2rem;
+  width: auto;
+  filter: grayscale(100%);
+  opacity: 0.3;
+}
+
+.support {
+  margin-top: 100px;
+  display: flex;
+}
+.support > * {
+  flex: 1;
+}
+.support .text {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.support .text h2 {
+  font-size: 8rem;
+  font-weight: 600;
+}
+.support .text p {
+  color: #dadada;
+}
+.support .text a {
+  color: #ff7235;
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -113,6 +113,11 @@ $font-size: 24px;
 $radius: 10px;
 $section-margin: 100px;
 
+@mixin big-title {
+  font-size: 8rem;
+  font-weight: 600;
+}
+
 body {
   width: 80%;
   margin: 0 auto;
@@ -184,8 +189,7 @@ nav {
     gap: 4rem;
 
     h1 {
-      font-size: 8rem;
-      font-weight: 600;
+      @include big-title;
     }
 
     p {
@@ -206,6 +210,56 @@ nav {
         color: white;
         border: none;
       }
+    }
+  }
+}
+
+.graphImg {
+  width: 100%;
+  margin-top: $section-margin;
+  border-image: linear-gradient($primary 0 0) fill 0 / auto / 0 100vw;
+  padding-top: 5rem;
+}
+
+.brands {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: $section-margin;
+
+  img {
+    height: 2rem;
+    width: auto;
+    filter: grayscale(100%);
+    opacity: 0.3;
+  }
+}
+
+.support {
+  margin-top: $section-margin;
+  display: flex;
+
+  > * {
+    flex: 1;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    h2 {
+      @include big-title;
+    }
+
+    p {
+      color: $text;
+    }
+
+    a {
+      color: $primary;
+      text-decoration: none;
     }
   }
 }
