@@ -63,7 +63,6 @@ video {
   vertical-align: baseline;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  text-size-adjust: none;
 }
 
 footer,
@@ -234,6 +233,66 @@ nav button:hover {
 .support .text a {
   color: #ff7235;
   text-decoration: none;
+}
+
+.plans {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-top: 100px;
+  align-items: center;
+}
+.plans h2 {
+  font-size: 8rem;
+  font-weight: 600;
+  font-size: 6rem;
+}
+.plans .plans-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  width: 100%;
+}
+.plans .plans-container .plan {
+  border: 1px solid #dadada;
+  padding: 4rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 33%;
+}
+.plans .plans-container .plan h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.plans .plans-container .plan .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.plans .plans-container .plan .content p {
+  font-size: 1.5rem;
+}
+.plans .plans-container .plan .price {
+  font-weight: 600;
+}
+.plans .plans-container .plan .price span {
+  font-weight: 400;
+  color: #dadada;
+}
+.plans .plans-container .plan .detail {
+  color: #dadada;
+  font-size: 1rem;
+}
+.plans .plans-container .plan button {
+  background: none;
+  color: #ff7235;
+  border: 2px solid #ff7235;
+  border-radius: 10px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  width: max-content;
 }
 
 /*# sourceMappingURL=main.css.map */

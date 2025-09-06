@@ -63,7 +63,6 @@ video {
   vertical-align: baseline;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  text-size-adjust: none;
 }
 
 footer,
@@ -260,6 +259,74 @@ nav {
     a {
       color: $primary;
       text-decoration: none;
+    }
+  }
+}
+
+.plans {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-top: $section-margin;
+  align-items: center;
+
+  h2 {
+    @include big-title;
+    font-size: 6rem;
+  }
+  .plans-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    width: 100%;
+
+    .plan {
+      border: 1px solid $text;
+      padding: 4rem;
+      border-radius: $radius;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: 33%;
+
+      h3 {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        p {
+          font-size: 1.5rem;
+        }
+      }
+
+      .price {
+        font-weight: 600;
+
+        span {
+          font-weight: 400;
+          color: $text;
+        }
+      }
+
+      .detail {
+        color: $text;
+        font-size: 1rem;
+      }
+
+      button {
+        background: none;
+        color: $primary;
+        border: 2px solid $primary;
+        border-radius: $radius;
+        padding: 1rem;
+        transition: all 0.3s ease;
+        width: max-content;
+      }
     }
   }
 }
