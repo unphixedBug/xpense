@@ -330,20 +330,59 @@ nav button:hover {
 }
 
 footer {
-  margin-top: 100px;
+  margin: 100px 0;
 }
 footer .first {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
+footer .first > p {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+footer .first > p span {
+  color: white;
+  background: #ff7235;
+  padding: 0.5rem;
+  border-radius: 100%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .first h4 {
+  padding-bottom: 3rem;
+  font-size: 2rem;
+}
+footer .first ul {
+  display: flex;
+  flex-direction: column;
+}
+footer .first ul li {
+  margin-bottom: 1.5rem;
+}
+footer .first .newsletter p {
+  color: #dadada;
+}
+footer .first .newsletter p:last-of-type {
+  font-size: 1rem;
+}
 footer .first .newsletter form {
+  margin: 2rem 0;
   border: 1px solid black;
   border-radius: 10px;
   padding: 0.5rem;
 }
 footer .first .newsletter form input {
   border: none;
+}
+footer .first .newsletter form input::placeholder {
+  color: black;
+  font-size: 1rem;
+  font-weight: 500;
 }
 footer .first .newsletter form button {
   border: none;
